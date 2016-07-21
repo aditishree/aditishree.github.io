@@ -1,0 +1,105 @@
+body{
+    position: relative;
+}
+
+
+/*to retain the default color of link */
+.container a { 
+    color: inherit;
+    text-decoration: none;
+}
+
+.container a:link, a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+.container a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+
+
+.container h1 {
+    background-color: #a1d6d0; 
+    color: #ffffff;
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 1.5em;
+    padding: 1em;
+    font-weight: 900;
+    font-size:3.5em;
+    
+}
+
+
+
+        ul.nav-tabs {
+            width: 140px;
+            margin-top: 20px;
+            border-radius: 4px;
+            background: #fff;
+            z-index: 999;
+            border: 1px solid #ddd;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+        }
+        ul.nav-tabs li {
+            margin: 0;
+            border-top: 1px solid #ddd;
+        }
+        ul.nav-tabs li:first-child {
+            border-top: none;
+        }
+        ul.nav-tabs li a {
+            margin: 0;
+            padding: 8px 16px;
+            border-radius: 0;
+        }
+        ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover {
+            color: #fff;
+            background: #0088cc;
+            border: 1px solid #0088cc;
+        }
+        ul.nav-tabs li:first-child a {
+            border-radius: 4px 4px 0 0;
+        }
+        ul.nav-tabs li:last-child a {
+            border-radius: 0 0 4px 4px;
+        }
+        ul.nav-tabs.affix {
+            top: 0px; /* set the top position of pinned element */
+        }
+        @media screen and (min-width: 992px) and (max-width: 1199px){
+            ul.nav-tabs{
+                width: 180px; /* set nav width on medium devices */
+            }
+        }
+        @media screen and (min-width: 1200px){
+            ul.nav-tabs{
+                width: 220px; /* set nav width on large devices */
+            }
+        }
+
+/*For back to top scroll button*/
+#top-link-block.affix-top {
+    position: absolute; /* allows it to "slide" up into view */
+    bottom: -82px;
+    left: 10px;
+}
+#top-link-block.affix {
+    position: fixed; /* keeps it on the bottom once in view */
+    bottom: 18px;
+    left: 10px;
+}
+
+
+/*.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+}*/
+
